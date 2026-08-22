@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Harshada's Research Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #2E86C1; color: white; text-align: center; padding: 2rem; }
-    nav { background: #1B4F72; padding: 1rem; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
-    h2 { color: #2E86C1; margin-bottom: 1rem; }
-    ul { list-style-type: square; padding-left: 20px; }
-    img { margin: 10px; border-radius: 8px; }
-    footer { background: #f1f1f1; text-align: center; padding: 1rem; margin-top: 2rem; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Harshada Pagare</h1>
-    <p>Research Portfolio & Academic Achievements</p>
+  <!-- Hero Section with Banner Background -->
+  <header class="hero">
+    <div class="overlay">
+      <img src="photos/Profile_Photo.jpg" alt="Profile Photo" class="profile-pic">
+      <h1>Harshada Pagare</h1>
+      <p>B.Sc. Biotechnology | Research Enthusiast | Environmental Risk Analyst</p>
+      <p>
+        <a href="mailto:pagareharshada123@gmail.com">📧 Email</a> | 
+        <a href="https://www.linkedin.com/in/harshada-a-pagare-74000a167?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">🔗 LinkedIn</a>
+      </p>
+    </div>
   </header>
 
+  <!-- Highlights Gallery -->
+  <section class="highlight">
+    <h2>Highlights</h2>
+    <div class="gallery">
+      <figure><img src="photos/profesional_photo.jpg" alt="Professional"><figcaption>Professional Presence</figcaption></figure>
+      <figure><img src="photos/presenting_at_mumbai_university.jpg" alt="Presenting"><figcaption>Presenting at Mumbai University</figcaption></figure>
+      <figure><img src="photos/awarded_by_IAS.jpg" alt="Award"><figcaption>Awarded by IAS</figcaption></figure>
+      <figure><img src="photos/appriciation_by_professors.jpg" alt="Appreciation"><figcaption>Appreciation by Professors</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Navigation -->
   <nav>
     <a href="#about">About</a>
     <a href="#research">Research</a>
@@ -32,12 +41,14 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>B.Sc. Biotechnology graduate with strong academic performance (CGPA 8.34 & 8.98). 
        Passionate about environmental biotechnology, hydrocarbon degradation, and sustainable practices.</p>
   </section>
 
+  <!-- Research Section -->
   <section id="research">
     <h2>Research Projects</h2>
     <ul>
@@ -45,46 +56,38 @@
     </ul>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
     <p>Bioinformatics tools (BLAST, NCBI, UniProt, KEGG), Microscopy, Spectroscopy (IR, FTIR, UV-Vis, Mass), 
        Environmental risk analysis, Organic farming, Climate change policy & ESG.</p>
   </section>
 
+  <!-- Certificates Section -->
   <section id="certificates">
     <h2>Certificates & Awards</h2>
-    <ul>
-      <li><a href="certificates/Certificate_Bioinformatics.pdf">Bioinformatics Certificate</a></li>
-      <li><a href="certificates/Certificate_skill_india_customer_engagement.pdf">Skill India Customer Engagement</a></li>
-      <li><a href="certificates/Certificate_Sustainability_and_corporate_ESG.pdf">Sustainability and Corporate ESG</a></li>
-      <li><a href="certificates/Community_engagement_Program.pdf">Community Engagement Program</a></li>
-      <li><a href="certificates/Covid_Clinic_Safety_certificate.pdf">Covid Clinic Safety Certificate</a></li>
-      <li><a href="certificates/ISO_CERTIFICATION_2026.pdf">ISO Certification</a></li>
-      <li><a href="certificates/NASA_Remote_sensing_certificate.pdf">NASA Remote Sensing Certificate</a></li>
-      <li><a href="certificates/Net_zero_101_UN_university.pdf">Net Zero 101 (UN University)</a></li>
-      <li><a href="certificates/Newbie_Award.pdf">Newbie Award</a></li>
-      <li><a href="certificates/Python_Programming_certificate.pdf">Python Programming Certificate</a></li>
-      <li><a href="certificates/Reader_of_the_year_award.pdf">Reader of the Year Award</a></li>
-      <li><a href="certificates/Training_Microscopy_spectroscopy.pdf">Microscopy & Spectroscopy Training</a></li>
-    </ul>
+    <div class="grid">
+      <a href="certificates/Certificate_Bioinformatics.pdf" class="card">Bioinformatics Certificate</a>
+      <a href="certificates/Certificate_skill_india_customer_engagement.pdf" class="card">Skill India Customer Engagement</a>
+      <a href="certificates/Certificate_Sustainability_and_corporate_ESG.pdf" class="card">Sustainability & Corporate ESG</a>
+      <a href="certificates/NASA_Remote_sensing_certificate.pdf" class="card">NASA Remote Sensing</a>
+      <a href="certificates/Python_Programming_certificate.pdf" class="card">Python Programming</a>
+      <a href="certificates/Reader_of_the_year_award.pdf" class="card">Reader of the Year</a>
+    </div>
   </section>
 
+  <!-- Photos Section -->
   <section id="photos">
-    <h2>Photos</h2>
-    <img src="photos/Profile_Photo.jpg" alt="Profile Photo" width="200">
-    <img src="photos/profesional_photo.jpg" alt="Professional Photo" width="200">
-    <img src="photos/presenting_at_mumbai_university.jpg" alt="Presenting at Mumbai University" width="200">
-    <img src="photos/appriciation_by_professors.jpg" alt="Appreciation by Professors" width="200">
-    <img src="photos/awarded_by_IAS.jpg" alt="Awarded by IAS" width="200">
-    <img src="photos/newbie_award.jpg" alt="Newbie Award" width="200">
-    <img src="photos/reader_of_the_year.jpg" alt="Reader of the Year" width="200">
-    <img src="photos/youth_forum.jpg" alt="Youth Forum" width="200">
-    <img src="photos/exploring_nature.jpg" alt="Exploring Nature" width="200">
-    <img src="photos/hiking.jpg" alt="Hiking" width="200">
-    <img src="photos/indian_architecture.jpg" alt="Indian Architecture" width="200">
-    <img src="photos/night_campaigning_at_mumbai.jpg" alt="Night Campaigning at Mumbai" width="200">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <figure><img src="photos/exploring_nature.jpg" alt="Nature"><figcaption>Exploring Nature</figcaption></figure>
+      <figure><img src="photos/hiking.jpg" alt="Hiking"><figcaption>Hiking</figcaption></figure>
+      <figure><img src="photos/indian_architecture.jpg" alt="Architecture"><figcaption>Indian Architecture</figcaption></figure>
+      <figure><img src="photos/night_campaigning_at_mumbai.jpg" alt="Campaign"><figcaption>Night Campaigning at Mumbai</figcaption></figure>
+    </div>
   </section>
 
+  <!-- Publications Section -->
   <section id="publications">
     <h2>Publications</h2>
     <p><strong>Isolation of the Hydrocarbon-Degrading and Biosurfactant-Producing Bacterial Isolates from Oil-Contaminated Sites</strong><br>
@@ -92,10 +95,11 @@
        <a href="https://drive.google.com/file/d/1DCN_AvzBOVCtz9BELVRVpcXRdHVC2w9s/view">Read Publication</a></p>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:pagareharshada123@gmail.com">pagareharshada123@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/harshada-a-pagare-74000a167?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">linkedin.com/in/harshada-a-pagare-74000a167</a></p>
   </section>
 
   <footer>
