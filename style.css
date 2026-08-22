@@ -73,6 +73,12 @@ nav a:hover {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
 figcaption {
@@ -120,11 +126,23 @@ figcaption {
   color: #117A65;
 }
 
-/* Section Headings */
+/* Section Headings with Divider */
 section h2 {
   text-align: center;
   margin-top: 2rem;
   color: #1B4F72;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #17A589; /* teal accent */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 /* Footer */
