@@ -1,3 +1,13 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
 .hero {
   background: url('banner photo.png') no-repeat center center/cover;
   color: white;
@@ -20,4 +30,108 @@
   border: 4px solid white;
   margin-bottom: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navigation */
+nav {
+  background: #1B4F72;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #AED6F1;
+}
+
+/* Highlights */
+.highlight {
+  background: #f4f9ff;
+  padding: 2rem;
+}
+
+.highlight h2 {
+  text-align: center;
+  color: #1B4F72;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Certificates Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  background: #eaf2f8;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #2E86C1;
+}
+
+.card a {
+  text-decoration: none;
+  color: #1B4F72;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: #117A65;
+}
+
+/* Section Headings */
+section h2 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #1B4F72;
+}
+
+/* Footer */
+footer {
+  background: #1B4F72;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
