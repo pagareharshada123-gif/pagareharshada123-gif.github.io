@@ -1573,6 +1573,30 @@ a {
     color: white;
 }
 
+
+/* =====================================================
+   CONTACT BUTTON GROUP
+===================================================== */
+
+.contact-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.contact-buttons .linkedin-button,
+.contact-buttons .email-button {
+    margin-top: 0;
+}
+
+
 /* =====================================================
    EMAIL BUTTON
 ===================================================== */
@@ -1584,8 +1608,6 @@ a {
     justify-content: center;
 
     gap: 10px;
-
-    margin-top: 14px;
 
     padding: 14px 24px;
 
@@ -1607,7 +1629,8 @@ a {
         background 0.3s ease,
         color 0.3s ease,
         transform 0.3s ease,
-        border-color 0.3s ease;
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .email-button:hover {
@@ -1618,12 +1641,13 @@ a {
     border-color: white;
 
     transform: translateY(-2px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .email-button span {
     font-size: 1rem;
 }
-
 /* =========================================================
    17. FOOTER
 ========================================================= */
